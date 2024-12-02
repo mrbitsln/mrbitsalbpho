@@ -1,14 +1,30 @@
 version: "3.7"
-
 services:
-
   app_proxy:
     environment:
-      # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: sparkles-hello-world_server_1
-      APP_PORT: 3000
-    
+      APP_HOST: alby-albyhub-phoenixd_server_1
+      APP_PORT: 8080
+      PROXY_AUTH_ADD: "false"
   server:
-    image: getumbrel/community-app-store-hello-world:latest
-    user: "1000:1000"
-    init: true
+    image: ghcr.io/getalby/hub:v1.10.4
+    depends_on:
+      - phoenixd
+    volumes:
+      - ${APP_DATA_DIR}/data/albyhub:/data
+    environment:
+      PHOENIXD_AUTHORIZATION: dcf0cf3501c04f97890e3bb3204f94f60d6b99d270cc8c40dfd390cced2f3c11
+      PHOENIXD_ADDRESS: http://alby-albyhub-phoenixd_phoenixd_1:9740
+      LN_BACKEND_TYPE: "PHOENIX"
+      WORK_DIR: "/data"
+      COOKIE_SECRET: "742375a0f444d6de9c692aa83ac43c10"
+      LOG_EVENTS: "true"
+    restart: on-failure
+    stop_grace_period: 1m
+
+  phoenixd:
+    image: ghcr.io/sethforprivacy/phoenixd:latest
+    volumes:
+      - ${APP_DATA_DIR}/data/phoenixd:/data
+    environment:
+      - PHOENIX_DATADIR=/data
+    command: --agree-to-terms-of-service --http-bind-ip 0.0.0.0 --http-password=dcf0cf3501c04f97890e3bb3204f94f60d6b99d270cc8c40dfd390cced2f3c11
