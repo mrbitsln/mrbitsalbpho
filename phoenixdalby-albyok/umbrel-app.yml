@@ -2,7 +2,7 @@ manifestVersion: 1
 id: phoenixdalby
 name: AlbyOk
 tagline: Alby and Phoenixd fixed
-icon: https://svgur.com/i/mvA.svg
+icon: https://raw.githubusercontent.com/getAlby/umbrel-community-app-store/master/alby-albyhub/images/icon.svg
 category: Bitcoin
 version: "1.0.0"
 port: 59001
@@ -19,9 +19,10 @@ submission: https://github.com/mrbitsln/mrbitsalbpho/tree/master/phoenixdalby-al
 repo: https://github.com/mrbitsln/mrbitsalbpho/tree/master/phoenixdalby-albyok
 support: https://github.com/mrbitsln/mrbitsalbpho/tree/master/phoenixdalby-albyok
 gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://raw.githubusercontent.com/getAlby/umbrel-community-app-store/master/alby-albyhub/images/wallet.png
+  - https://raw.githubusercontent.com/getAlby/umbrel-community-app-store/master/alby-albyhub/images/connections.png
+  - https://raw.githubusercontent.com/getAlby/umbrel-community-app-store/master/alby-albyhub/images/store.png
+  - https://raw.githubusercontent.com/getAlby/umbrel-community-app-store/master/alby-albyhub/images/node.png
 releaseNotes: >-
   Add what's new in the latest version of your app here.
 dependencies: []
