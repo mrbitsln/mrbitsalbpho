@@ -1,23 +1,23 @@
 manifestVersion: 1
-id: sparkles-hello-world
-name: Hello World
-tagline: Replace this tagline with your app's tagline
+id: phoenixdalby
+name: AlbyOk
+tagline: Alby and Phoenixd fixed
 icon: https://svgur.com/i/mvA.svg
-category: Development
+category: Bitcoin
 version: "1.0.0"
-port: 4000
+port: 59001
 description: >-
   Add your app's description here.
 
 
   You can also add newlines!
 
-developer: Umbrel
+developer: Alby
 website: https://umbrel.com
-submitter: Umbrel
-submission: https://github.com/getumbrel/umbrel-hello-world-app
-repo: https://github.com/getumbrel/umbrel-hello-world-app
-support: https://github.com/getumbrel/umbrel-hello-world-app/issues
+submitter: Mrbitsln
+submission: https://github.com/mrbitsln/mrbitsalbpho/tree/master/phoenixdalby-albyok
+repo: https://github.com/mrbitsln/mrbitsalbpho/tree/master/phoenixdalby-albyok
+support: https://github.com/mrbitsln/mrbitsalbpho/tree/master/phoenixdalby-albyok
 gallery:
   - https://i.imgur.com/yyVG0Jb.jpeg
   - https://i.imgur.com/yyVG0Jb.jpeg
