@@ -4,7 +4,7 @@ name: AlbyOk
 tagline: Alby and Phoenixd fixed
 icon: https://raw.githubusercontent.com/getAlby/umbrel-community-app-store/master/alby-albyhub/images/icon.svg
 category: Bitcoin
-version: "1.0.0"
+version: "1.10.4"
 port: 59001
 description: >-
   Add your app's description here.
